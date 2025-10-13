@@ -1,0 +1,4 @@
+
+DUEL START: vicotr VS taras
+Stormtrooper taras [HP: 105, Damage: 25]
+Medic vicotr [HP: 80, Damage: 10]

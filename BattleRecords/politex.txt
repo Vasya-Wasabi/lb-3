@@ -1,0 +1,123 @@
+
+TEAM BATTLE: AFD VS QEW
+
+| Attackers QEW |
+| 0) igor [HP: 80, Damage: 10] |
+| 1) maxim [HP: 150, Damage: 20] |
+| Defenders AFD |
+| 0) taras [HP: 105, Damage: 25] |
+| 1) victor [HP: 65, Damage: 30] |
+
+| ROUND 1 |
+
+| Attackers QEW |
+| 0) igor [HP: 80, Damage: 10] |
+| 1) maxim [HP: 141, Damage: 20] |
+| Defenders AFD |
+| 0) taras [HP: 105, Damage: 25] |
+| 1) victor [HP: 45, Damage: 30] |
+
+| ROUND 2 |
+
+| Attackers QEW |
+| 0) igor [HP: 80, Damage: 10] |
+| 1) maxim [HP: 132, Damage: 20] |
+| Defenders AFD |
+| 0) taras [HP: 105, Damage: 25] |
+| 1) victor [HP: 45, Damage: 30] |
+
+| ROUND 3 |
+
+| Attackers QEW |
+| 0) igor [HP: 80, Damage: 10] |
+| 1) maxim [HP: 123, Damage: 20] |
+| Defenders AFD |
+| 0) taras [HP: 105, Damage: 25] |
+| 1) victor [HP: 25, Damage: 30] |
+
+| ROUND 4 |
+
+| Attackers QEW |
+| 0) igor [HP: 80, Damage: 10] |
+| 1) maxim [HP: 93, Damage: 20] |
+| Defenders AFD |
+| 0) taras [HP: 105, Damage: 25] |
+| 1) victor [HP: 5, Damage: 30] |
+
+| ROUND 5 |
+
+| Attackers QEW |
+| 0) igor [HP: 55, Damage: 10] |
+| 1) maxim [HP: 93, Damage: 20] |
+| Defenders AFD |
+| 0) taras [HP: 105, Damage: 25] |
+| 1) victor [HP: 0, Damage: 30] |
+
+| ROUND 6 |
+
+| Attackers QEW |
+| 0) igor [HP: 30, Damage: 10] |
+| 1) maxim [HP: 93, Damage: 20] |
+| Defenders AFD |
+| 0) taras [HP: 105, Damage: 25] |
+| 1) victor [HP: 0, Damage: 30] |
+
+| ROUND 7 |
+
+| Attackers QEW |
+| 0) igor [HP: 15, Damage: 10] |
+| 1) maxim [HP: 93, Damage: 20] |
+| Defenders AFD |
+| 0) taras [HP: 95, Damage: 25] |
+| 1) victor [HP: 0, Damage: 30] |
+
+| ROUND 8 |
+
+| Attackers QEW |
+| 0) igor [HP: 15, Damage: 10] |
+| 1) maxim [HP: 93, Damage: 20] |
+| Defenders AFD |
+| 0) taras [HP: 85, Damage: 25] |
+| 1) victor [HP: 0, Damage: 30] |
+
+| ROUND 9 |
+
+| Attackers QEW |
+| 0) igor [HP: 0, Damage: 10] |
+| 1) maxim [HP: 93, Damage: 20] |
+| Defenders AFD |
+| 0) taras [HP: 65, Damage: 25] |
+| 1) victor [HP: 0, Damage: 30] |
+
+| ROUND 10 |
+
+| Attackers QEW |
+| 0) igor [HP: 0, Damage: 10] |
+| 1) maxim [HP: 86, Damage: 20] |
+| Defenders AFD |
+| 0) taras [HP: 45, Damage: 25] |
+| 1) victor [HP: 0, Damage: 30] |
+
+| ROUND 11 |
+
+| Attackers QEW |
+| 0) igor [HP: 0, Damage: 10] |
+| 1) maxim [HP: 61, Damage: 20] |
+| Defenders AFD |
+| 0) taras [HP: 25, Damage: 25] |
+| 1) victor [HP: 0, Damage: 30] |
+
+| ROUND 12 |
+
+| Attackers QEW |
+| 0) igor [HP: 0, Damage: 10] |
+| 1) maxim [HP: 54, Damage: 20] |
+| Defenders AFD |
+| 0) taras [HP: 5, Damage: 25] |
+| 1) victor [HP: 0, Damage: 30] |
+
+| ROUND 13 |
+
+
+| TEAM BATTLE ENDED |
+WINNER: QEW!

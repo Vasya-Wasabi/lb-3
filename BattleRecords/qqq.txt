@@ -1,0 +1,4 @@
+
+DUEL START: fasdf VS vsdf
+Medic vsdf [HP: 80, Damage: 10]
+Stormtrooper fasdf [HP: 105, Damage: 25]
