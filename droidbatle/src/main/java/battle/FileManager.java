@@ -2,50 +2,71 @@ package battle;
 
 import java.io.*;
 
+/**
+ * Клас FileManager відповідає за створення, запис, зчитування та закриття файлів журналу бою.
+ *
+ * Усі дії під час битви (ходи, результати, повідомлення) записуються у файл формату .txt
+ * у папці "BattleRecords". Також усі записи дублюються у консоль.
+ */
 public class FileManager {
 
+    /** Поточний активний об’єкт для запису у файл. */
     private static FileWriter writer = null;
+
+    /** Шлях до поточного файлу журналу бою. */
     private static String currentFile = null;
 
-    // Set the file name before battle
+    /**
+     * Створює новий файл для запису журналу бою.
+     * Якщо файл з таким іменем вже існує — він перезаписується.
+     *
+     * @param filename ім’я файлу без розширення (наприклад, "duel1" або "team_battle")
+     */
     public static void setFile(String filename) {
         try {
-
             currentFile = "BattleRecords\\" + filename + ".txt";
-            writer = new FileWriter(currentFile, false); // create new file
+            writer = new FileWriter(currentFile, false); // створення нового файлу
             System.out.println("Battle log file set: " + currentFile);
-
         } catch (IOException e) {
-            System.err.println("Error creating file: " + e.getMessage());
+            System.out.println("Error creating file: " + e.getMessage());
             currentFile = null;
             writer = null;
         }
     }
 
-    // Save a single line to the battle log
+    /**
+     * Записує один рядок тексту у файл журналу бою та дублює його у консоль.
+     * Якщо файл ще не створено (writer == null), то запис у файл пропускається.
+     *
+     * @param log текстовий рядок, який потрібно додати до журналу бою
+     */
     public static void saveBattle(String log) {
-        // Always print to console
+        // Завжди виводимо лог у консоль
         System.out.println(log);
 
-        // If logging is disabled — skip writing to file
+        // Якщо файл не встановлено — пропускаємо запис
         if (writer == null) return;
 
         try {
             writer.write(log + System.lineSeparator());
-            writer.flush(); // immediately flush to make file readable during battle
         } catch (IOException e) {
-            System.err.println("Error writing to file: " + e.getMessage());
+            System.out.println("Error writing to file: " + e.getMessage());
         }
     }
 
-    // Close the log file after the battle ends
+    /**
+     * Закриває поточний файл журналу бою після завершення бою.
+     *
+     * Цей метод звільняє ресурси FileWriter, що запобігає втраті даних.
+     * Викликається після закінчення дуелі або командної битви.
+     */
     public static void closeFile() {
         if (writer != null) {
             try {
                 writer.close();
                 System.out.println("Battle log file closed successfully: " + currentFile);
             } catch (IOException e) {
-                System.err.println("Error closing file: " + e.getMessage());
+                System.out.println("Error closing file: " + e.getMessage());
             } finally {
                 writer = null;
                 currentFile = null;
@@ -53,7 +74,12 @@ public class FileManager {
         }
     }
 
-    // Read and replay the battle log
+    /**
+     * Зчитує вміст файлу журналу бою та виводить його у консоль.
+     *
+     * @param filename ім’я файлу (разом із розширенням .txt або без нього),
+     *                 який знаходиться у папці "BattleRecords"
+     */
     public static void readBattle(String filename) {
         String fullPath = "BattleRecords\\" + filename;
 
@@ -64,7 +90,7 @@ public class FileManager {
                 System.out.println(line);
             }
         } catch (IOException e) {
-            System.err.println("Battle file '" + fullPath + "' not found!");
+            System.out.println("Battle file '" + fullPath + "' not found!");
         }
     }
 }

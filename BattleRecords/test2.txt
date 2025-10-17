@@ -1,0 +1,368 @@
+
+TEAM BATTLE: RFJ VS DFE
+
+| Attackers DFE |
+| 0) igor [HP: 80, Damage: 10] |
+| 1) victor [HP: 65, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 105, Damage: 25] |
+| 1) maxim [HP: 150, Damage: 20] |
+
+| ROUND 1 |
+| victor( DFE ) -> taras( RFJ ) |  SKILL   | victor [HP: 65, Damage: 30]; taras [HP: 105, Damage: 25] |
+| maxim( RFJ ) -> igor( DFE ) |  SKILL   | maxim [HP: 150, Damage: 20]; igor [HP: 80, Damage: 10] |
+
+| Attackers DFE |
+| 0) igor [HP: 80, Damage: 10] |
+| 1) victor [HP: 65, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 105, Damage: 25] |
+| 1) maxim [HP: 150, Damage: 20] |
+
+| ROUND 2 |
+| victor( DFE ) -> taras( RFJ ) |  DMG: 30 | victor [HP: 65, Damage: 30]; taras [HP: 87, Damage: 25] |
+| taras( RFJ ) -> victor( DFE ) |  DMG: 25 | taras [HP: 87, Damage: 25]; victor [HP: 65, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 80, Damage: 10] |
+| 1) victor [HP: 65, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 87, Damage: 25] |
+| 1) maxim [HP: 150, Damage: 20] |
+
+| ROUND 3 |
+| victor( DFE ) -> maxim( RFJ ) |  SKILL   | victor [HP: 65, Damage: 30]; maxim [HP: 150, Damage: 20] |
+| taras( RFJ ) -> igor( DFE ) |  SKILL   | taras [HP: 87, Damage: 25]; igor [HP: 80, Damage: 10] |
+
+| Attackers DFE |
+| 0) igor [HP: 80, Damage: 10] |
+| 1) victor [HP: 65, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 87, Damage: 25] |
+| 1) maxim [HP: 150, Damage: 20] |
+
+| ROUND 4 |
+| victor( DFE ) -> taras( RFJ ) |  DMG: 30 | victor [HP: 65, Damage: 30]; taras [HP: 51, Damage: 25] |
+| taras( RFJ ) -> igor( DFE ) |  DMG: 25 | taras [HP: 51, Damage: 25]; igor [HP: 55, Damage: 10] |
+
+| Attackers DFE |
+| 0) igor [HP: 55, Damage: 10] |
+| 1) victor [HP: 65, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 51, Damage: 25] |
+| 1) maxim [HP: 150, Damage: 20] |
+
+| ROUND 5 |
+| victor( DFE ) -> maxim( RFJ ) |  SKILL   | victor [HP: 65, Damage: 30]; maxim [HP: 150, Damage: 20] |
+| maxim( RFJ ) -> victor( DFE ) |  DMG: 20 | maxim [HP: 150, Damage: 20]; victor [HP: 55, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 55, Damage: 10] |
+| 1) victor [HP: 55, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 51, Damage: 25] |
+| 1) maxim [HP: 150, Damage: 20] |
+
+| ROUND 6 |
+| victor( DFE ) -> taras( RFJ ) |  DMG: 30 | victor [HP: 55, Damage: 30]; taras [HP: 21, Damage: 25] |
+| taras( RFJ ) -> victor( DFE ) |  SKILL   | taras [HP: 21, Damage: 25]; victor [HP: 55, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 55, Damage: 10] |
+| 1) victor [HP: 55, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 21, Damage: 25] |
+| 1) maxim [HP: 150, Damage: 20] |
+
+| ROUND 7 |
+| victor( DFE ) -> taras( RFJ ) |  DMG: 30 | victor [HP: 55, Damage: 30]; taras [HP: 0, Damage: 25] |
+| maxim( RFJ ) -> victor( DFE ) |  SKILL   | maxim [HP: 150, Damage: 20]; victor [HP: 55, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 55, Damage: 10] |
+| 1) victor [HP: 55, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 150, Damage: 20] |
+
+| ROUND 8 |
+| victor( DFE ) -> maxim( RFJ ) |  SKILL   | victor [HP: 55, Damage: 30]; maxim [HP: 150, Damage: 20] |
+| maxim( RFJ ) -> victor( DFE ) |  DMG: 20 | maxim [HP: 150, Damage: 20]; victor [HP: 55, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 55, Damage: 10] |
+| 1) victor [HP: 55, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 150, Damage: 20] |
+
+| ROUND 9 |
+| victor( DFE ) -> maxim( RFJ ) |  DMG: 30 | victor [HP: 55, Damage: 30]; maxim [HP: 141, Damage: 20] |
+| maxim( RFJ ) -> victor( DFE ) |  SKILL   | maxim [HP: 141, Damage: 20]; victor [HP: 55, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 55, Damage: 10] |
+| 1) victor [HP: 55, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 141, Damage: 20] |
+
+| ROUND 10 |
+| victor( DFE ) -> maxim( RFJ ) |  SKILL   | victor [HP: 55, Damage: 30]; maxim [HP: 141, Damage: 20] |
+| maxim( RFJ ) -> igor( DFE ) |  DMG: 20 | maxim [HP: 141, Damage: 20]; igor [HP: 45, Damage: 10] |
+
+| Attackers DFE |
+| 0) igor [HP: 45, Damage: 10] |
+| 1) victor [HP: 55, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 141, Damage: 20] |
+
+| ROUND 11 |
+| igor( DFE ) -> maxim( RFJ ) |  DMG: 10 | igor [HP: 55, Damage: 10]; maxim [HP: 136, Damage: 20] |
+| maxim( RFJ ) -> victor( DFE ) |  SKILL   | maxim [HP: 136, Damage: 20]; victor [HP: 55, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 55, Damage: 10] |
+| 1) victor [HP: 55, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 136, Damage: 20] |
+
+| ROUND 12 |
+| victor( DFE ) -> maxim( RFJ ) |  DMG: 30 | victor [HP: 55, Damage: 30]; maxim [HP: 127, Damage: 20] |
+| maxim( RFJ ) -> victor( DFE ) |  DMG: 20 | maxim [HP: 127, Damage: 20]; victor [HP: 55, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 55, Damage: 10] |
+| 1) victor [HP: 55, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 127, Damage: 20] |
+
+| ROUND 13 |
+| igor( DFE ) -> maxim( RFJ ) |  SKILL   | igor [HP: 80, Damage: 10]; maxim [HP: 127, Damage: 20] |
+| maxim( RFJ ) -> victor( DFE ) |  DMG: 20 | maxim [HP: 127, Damage: 20]; victor [HP: 35, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 80, Damage: 10] |
+| 1) victor [HP: 35, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 127, Damage: 20] |
+
+| ROUND 14 |
+| victor( DFE ) -> maxim( RFJ ) |  SKILL   | victor [HP: 35, Damage: 30]; maxim [HP: 127, Damage: 20] |
+| maxim( RFJ ) -> victor( DFE ) |  SKILL   | maxim [HP: 127, Damage: 20]; victor [HP: 35, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 80, Damage: 10] |
+| 1) victor [HP: 35, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 127, Damage: 20] |
+
+| ROUND 15 |
+| igor( DFE ) -> maxim( RFJ ) |  DMG: 10 | igor [HP: 80, Damage: 10]; maxim [HP: 122, Damage: 20] |
+| maxim( RFJ ) -> igor( DFE ) |  DMG: 20 | maxim [HP: 122, Damage: 20]; igor [HP: 70, Damage: 10] |
+
+| Attackers DFE |
+| 0) igor [HP: 70, Damage: 10] |
+| 1) victor [HP: 35, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 122, Damage: 20] |
+
+| ROUND 16 |
+| victor( DFE ) -> maxim( RFJ ) |  DMG: 30 | victor [HP: 35, Damage: 30]; maxim [HP: 104, Damage: 20] |
+| maxim( RFJ ) -> victor( DFE ) |  SKILL   | maxim [HP: 104, Damage: 20]; victor [HP: 35, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 70, Damage: 10] |
+| 1) victor [HP: 35, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 104, Damage: 20] |
+
+| ROUND 17 |
+| victor( DFE ) -> maxim( RFJ ) |  SKILL   | victor [HP: 35, Damage: 30]; maxim [HP: 104, Damage: 20] |
+| maxim( RFJ ) -> victor( DFE ) |  DMG: 20 | maxim [HP: 104, Damage: 20]; victor [HP: 35, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 70, Damage: 10] |
+| 1) victor [HP: 35, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 104, Damage: 20] |
+
+| ROUND 18 |
+| victor( DFE ) -> maxim( RFJ ) |  DMG: 30 | victor [HP: 35, Damage: 30]; maxim [HP: 95, Damage: 20] |
+| maxim( RFJ ) -> victor( DFE ) |  SKILL   | maxim [HP: 95, Damage: 20]; victor [HP: 35, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 70, Damage: 10] |
+| 1) victor [HP: 35, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 95, Damage: 20] |
+
+| ROUND 19 |
+| igor( DFE ) -> maxim( RFJ ) |  DMG: 10 | igor [HP: 70, Damage: 10]; maxim [HP: 90, Damage: 20] |
+| maxim( RFJ ) -> victor( DFE ) |  DMG: 20 | maxim [HP: 90, Damage: 20]; victor [HP: 25, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 70, Damage: 10] |
+| 1) victor [HP: 25, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 90, Damage: 20] |
+
+| ROUND 20 |
+| victor( DFE ) -> maxim( RFJ ) |  SKILL   | victor [HP: 25, Damage: 30]; maxim [HP: 90, Damage: 20] |
+| maxim( RFJ ) -> victor( DFE ) |  SKILL   | maxim [HP: 90, Damage: 20]; victor [HP: 25, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 70, Damage: 10] |
+| 1) victor [HP: 25, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 90, Damage: 20] |
+
+| ROUND 21 |
+| victor( DFE ) -> maxim( RFJ ) |  DMG: 30 | victor [HP: 25, Damage: 30]; maxim [HP: 75, Damage: 20] |
+| maxim( RFJ ) -> victor( DFE ) |  DMG: 20 | maxim [HP: 75, Damage: 20]; victor [HP: 15, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 70, Damage: 10] |
+| 1) victor [HP: 15, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 75, Damage: 20] |
+
+| ROUND 22 |
+| victor( DFE ) -> maxim( RFJ ) |  SKILL   | victor [HP: 15, Damage: 30]; maxim [HP: 75, Damage: 20] |
+| maxim( RFJ ) -> victor( DFE ) |  SKILL   | maxim [HP: 75, Damage: 20]; victor [HP: 15, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 70, Damage: 10] |
+| 1) victor [HP: 15, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 75, Damage: 20] |
+
+| ROUND 23 |
+| victor( DFE ) -> maxim( RFJ ) |  DMG: 30 | victor [HP: 15, Damage: 30]; maxim [HP: 66, Damage: 20] |
+| maxim( RFJ ) -> victor( DFE ) |  DMG: 20 | maxim [HP: 66, Damage: 20]; victor [HP: 15, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 70, Damage: 10] |
+| 1) victor [HP: 15, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 66, Damage: 20] |
+
+| ROUND 24 |
+| victor( DFE ) -> maxim( RFJ ) |  DMG: 30 | victor [HP: 15, Damage: 30]; maxim [HP: 48, Damage: 20] |
+| maxim( RFJ ) -> victor( DFE ) |  DMG: 20 | maxim [HP: 48, Damage: 20]; victor [HP: 0, Damage: 30] |
+
+| Attackers DFE |
+| 0) igor [HP: 70, Damage: 10] |
+| 1) victor [HP: 0, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 48, Damage: 20] |
+
+| ROUND 25 |
+| igor( DFE ) -> maxim( RFJ ) |  SKILL   | igor [HP: 80, Damage: 10]; maxim [HP: 48, Damage: 20] |
+| maxim( RFJ ) -> igor( DFE ) |  SKILL   | maxim [HP: 48, Damage: 20]; igor [HP: 80, Damage: 10] |
+
+| Attackers DFE |
+| 0) igor [HP: 80, Damage: 10] |
+| 1) victor [HP: 0, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 48, Damage: 20] |
+
+| ROUND 26 |
+| igor( DFE ) -> maxim( RFJ ) |  DMG: 10 | igor [HP: 80, Damage: 10]; maxim [HP: 43, Damage: 20] |
+| maxim( RFJ ) -> igor( DFE ) |  DMG: 20 | maxim [HP: 43, Damage: 20]; igor [HP: 70, Damage: 10] |
+
+| Attackers DFE |
+| 0) igor [HP: 70, Damage: 10] |
+| 1) victor [HP: 0, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 43, Damage: 20] |
+
+| ROUND 27 |
+| igor( DFE ) -> maxim( RFJ ) |  DMG: 10 | igor [HP: 70, Damage: 10]; maxim [HP: 40, Damage: 20] |
+| maxim( RFJ ) -> igor( DFE ) |  SKILL   | maxim [HP: 40, Damage: 20]; igor [HP: 70, Damage: 10] |
+
+| Attackers DFE |
+| 0) igor [HP: 70, Damage: 10] |
+| 1) victor [HP: 0, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 40, Damage: 20] |
+
+| ROUND 28 |
+| igor( DFE ) -> maxim( RFJ ) |  SKILL   | igor [HP: 80, Damage: 10]; maxim [HP: 40, Damage: 20] |
+| maxim( RFJ ) -> igor( DFE ) |  DMG: 20 | maxim [HP: 40, Damage: 20]; igor [HP: 70, Damage: 10] |
+
+| Attackers DFE |
+| 0) igor [HP: 70, Damage: 10] |
+| 1) victor [HP: 0, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 40, Damage: 20] |
+
+| ROUND 29 |
+| igor( DFE ) -> maxim( RFJ ) |  DMG: 10 | igor [HP: 70, Damage: 10]; maxim [HP: 35, Damage: 20] |
+| maxim( RFJ ) -> igor( DFE ) |  DMG: 20 | maxim [HP: 35, Damage: 20]; igor [HP: 50, Damage: 10] |
+
+| Attackers DFE |
+| 0) igor [HP: 50, Damage: 10] |
+| 1) victor [HP: 0, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 35, Damage: 20] |
+
+| ROUND 30 |
+| igor( DFE ) -> maxim( RFJ ) |  DMG: 10 | igor [HP: 50, Damage: 10]; maxim [HP: 25, Damage: 20] |
+| maxim( RFJ ) -> igor( DFE ) |  SKILL   | maxim [HP: 25, Damage: 20]; igor [HP: 50, Damage: 10] |
+
+| Attackers DFE |
+| 0) igor [HP: 50, Damage: 10] |
+| 1) victor [HP: 0, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 25, Damage: 20] |
+
+| ROUND 31 |
+| igor( DFE ) -> maxim( RFJ ) |  DMG: 10 | igor [HP: 60, Damage: 10]; maxim [HP: 20, Damage: 20] |
+| maxim( RFJ ) -> igor( DFE ) |  DMG: 20 | maxim [HP: 20, Damage: 20]; igor [HP: 50, Damage: 10] |
+
+| Attackers DFE |
+| 0) igor [HP: 50, Damage: 10] |
+| 1) victor [HP: 0, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 20, Damage: 20] |
+
+| ROUND 32 |
+| igor( DFE ) -> maxim( RFJ ) |  DMG: 10 | igor [HP: 60, Damage: 10]; maxim [HP: 10, Damage: 20] |
+| maxim( RFJ ) -> igor( DFE ) |  DMG: 20 | maxim [HP: 10, Damage: 20]; igor [HP: 40, Damage: 10] |
+
+| Attackers DFE |
+| 0) igor [HP: 40, Damage: 10] |
+| 1) victor [HP: 0, Damage: 30] |
+| Defenders RFJ |
+| 0) taras [HP: 0, Damage: 25] |
+| 1) maxim [HP: 10, Damage: 20] |
+
+| ROUND 33 |
+| igor( DFE ) -> maxim( RFJ ) |  DMG: 10 | igor [HP: 40, Damage: 10]; maxim [HP: 0, Damage: 20] |
+
+
+| TEAM BATTLE ENDED |
+WINNER: DFE!

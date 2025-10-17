@@ -1,29 +1,72 @@
 package droids;
 
+/**
+ * Клас Medic представляє дроїда-медика, який може лікувати себе
+ * та підтримувати команду під час бою.
+ *
+ * Медик має середній рівень здоров’я і невелику шкоду,
+ * але компенсує це можливістю відновлювати здоров’я після атак
+ * або за допомогою спеціальної навички.
+ *
+ * Основні характеристики:
+ *  - Здоров’я: 80
+ *  - Базова шкода: 10
+ *  - 30% шанс зцілитися на 10 одиниць після атаки
+ *  - Навичка: миттєве відновлення 25 одиниць здоров’я
+ */
 public class Medic extends Droid {
 
+    /**
+     * Створює нового дроїда-медика з указаним ім’ям.
+     *
+     * @param name ім’я дроїда
+     */
     public Medic(String name) {
         super(name, 80, 10);
     }
 
+    /**
+     * Виконує атаку по ворожому дроїду.
+     * Після атаки існує 30% шанс, що медик вилікує себе на 10 одиниць.
+     *
+     * @param target ціль, по якій здійснюється атака
+     */
+    @Override
     public void attack(Droid target) {
         target.takeDamage(damage);
         double chance = Math.random();
 
-        if(chance < 0.3) heal(10);
+        if (chance < 0.3) heal(10);
     }
 
+    /**
+     * Обробляє отримання шкоди від ворога.
+     * Здоров’я зменшується, але не може впасти нижче нуля.
+     *
+     * @param incomingDamage кількість отриманої шкоди
+     */
+    @Override
     public void takeDamage(int incomingDamage) {
         health -= incomingDamage;
-        if(health < 0) health = 0;
+        if (health < 0) health = 0;
     }
 
+    /**
+     * Відновлює певну кількість здоров’я.
+     * Якщо після лікування здоров’я перевищує 80, воно обмежується цим максимумом.
+     *
+     * @param amount кількість здоров’я для відновлення
+     */
     private void heal(int amount) {
-        final int maxHealth = 80;
         health += amount;
-        if(health > maxHealth) health = maxHealth;
+        if (health > 80) health = 80;
     }
 
+    /**
+     * Активує спеціальну навичку медика.
+     * Миттєво відновлює 25 одиниць здоров’я.
+     */
+    @Override
     public void skill() {
         heal(25);
     }
