@@ -3,10 +3,8 @@ package droids;
 /**
  * Клас Tank представляє важкого бойового дроїда з великою кількістю здоров’я
  * і високим рівнем захисту. Його роль — приймати основні удари супротивника.
- *
  * Особливість танка полягає у здатності зменшувати отриману шкоду та
  * іноді суттєво блокувати атаки ворога.
- *
  * Основні характеристики:
  *  - Здоров’я: 150
  *  - Базова шкода: 20
@@ -52,12 +50,13 @@ public class Tank extends Droid {
      * @param incomingDamage кількість отриманої шкоди
      */
     @Override
-    public void takeDamage(int incomingDamage) {
+    public void takeDamage(double incomingDamage) {
         double chance = Math.random();
-        int finalIncomingDamage = (int)(incomingDamage * damageReceivedMultiplier);
+        double finalIncomingDamage = incomingDamage * damageReceivedMultiplier;
+        setIncomingDamage(finalIncomingDamage);
 
         if (damageReceivedMultiplier == 1.0 && chance < 0.3)
-            finalIncomingDamage = (int)(finalIncomingDamage * 0.3);
+            finalIncomingDamage = finalIncomingDamage * 0.3;
 
         health -= finalIncomingDamage;
         if (health < 0) health = 0;

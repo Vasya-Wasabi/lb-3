@@ -3,19 +3,18 @@ package droids;
 /**
  * Клас Stormtrooper представляє універсального бойового дроїда,
  * який поєднує високу витривалість зі збалансованою атакою.
- *
  * Штурмовик може тимчасово підвищити свою силу завдяки навичці,
  * що збільшує шкоду як при атаці, так і при отриманні удару.
- *
  * Основні характеристики:
  *  - Здоров’я: 105
  *  - Базова шкода: 25
- *  - Навичка: збільшує всі дії (атака та отримання шкоди) на 20% протягом одного ходу
+ *  - Навичка: збільшує всі дії (атака та отримання шкоди) на 20% та 30% протягом одного ходу
  */
 public class Stormtrooper extends Droid {
 
-    /** Множник для підсилення або ослаблення ефектів у бою. */
-    private double multiplier = 1.0;
+    /** Множники для підсилення або ослаблення ефектів у бою. */
+    private double attackMultiplier = 1.0;
+    private double damageReceivedMultiplier = 1.0;
 
     /**
      * Створює нового штурмовика з указаним ім’ям.
@@ -35,9 +34,9 @@ public class Stormtrooper extends Droid {
      */
     @Override
     public void attack(Droid target) {
-        int actualDamage = (int)(damage * multiplier);
+        double actualDamage = damage * attackMultiplier;
         target.takeDamage(actualDamage);
-        multiplier = 1.0;
+        attackMultiplier = 1.0;
     }
 
     /**
@@ -48,11 +47,12 @@ public class Stormtrooper extends Droid {
      * @param incomingDamage кількість отриманої шкоди
      */
     @Override
-    public void takeDamage(int incomingDamage) {
-        int finalIncomingDamage = (int)(incomingDamage * multiplier);
+    public void takeDamage(double incomingDamage) {
+        double finalIncomingDamage = incomingDamage * damageReceivedMultiplier;
+        setIncomingDamage(finalIncomingDamage);
         health -= finalIncomingDamage;
         if (health < 0) health = 0;
-        multiplier = 1.0;
+        damageReceivedMultiplier = 1.0;
     }
 
     /**
@@ -61,6 +61,7 @@ public class Stormtrooper extends Droid {
      */
     @Override
     public void skill() {
-        multiplier = 1.2;
+        attackMultiplier = 1.2;
+        damageReceivedMultiplier = 1.3;
     }
 }

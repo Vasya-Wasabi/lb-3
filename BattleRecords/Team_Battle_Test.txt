@@ -1,0 +1,148 @@
+
+TEAM BATTLE: AEQ VS VKE
+
+| Attackers VKE |
+| 0) MD-07 [HP: 80.0, Damage: 10.0] |
+| 1) SN-09 [HP: 65.0, Damage: 30.0] |
+| Defenders AEQ |
+| 0) ST-01 [HP: 105.0, Damage: 25.0] |
+| 1) TK-88 [HP: 150.0, Damage: 20.0] |
+
+| ROUND 1 |
+| SN-09( VKE ) -> ST-01( AEQ ) |  SKILL [DMG: 30.0] | SN-09 [HP: 65.0, Damage: 30.0]; ST-01 [HP: 75.0, Damage: 25.0] |
+| TK-88( AEQ ) -> MD-07( VKE ) |  DMG: 20.0 | TK-88 [HP: 150.0, Damage: 20.0]; MD-07 [HP: 60.0, Damage: 10.0] |
+
+| Attackers VKE |
+| 0) MD-07 [HP: 60.0, Damage: 10.0] |
+| 1) SN-09 [HP: 65.0, Damage: 30.0] |
+| Defenders AEQ |
+| 0) ST-01 [HP: 75.0, Damage: 25.0] |
+| 1) TK-88 [HP: 150.0, Damage: 20.0] |
+
+| ROUND 2 |
+| SN-09( VKE ) -> TK-88( AEQ ) |  DMG: 18.0 | SN-09 [HP: 65.0, Damage: 30.0]; TK-88 [HP: 132.0, Damage: 20.0] |
+| ST-01( AEQ ) -> SN-09( VKE ) |  SKILL [DMG: 0.0] | ST-01 [HP: 75.0, Damage: 25.0]; SN-09 [HP: 65.0, Damage: 30.0] |
+
+| Attackers VKE |
+| 0) MD-07 [HP: 60.0, Damage: 10.0] |
+| 1) SN-09 [HP: 65.0, Damage: 30.0] |
+| Defenders AEQ |
+| 0) ST-01 [HP: 75.0, Damage: 25.0] |
+| 1) TK-88 [HP: 132.0, Damage: 20.0] |
+
+| ROUND 3 |
+| SN-09( VKE ) -> ST-01( AEQ ) |  SKILL [DMG: 39.0] | SN-09 [HP: 65.0, Damage: 30.0]; ST-01 [HP: 36.0, Damage: 25.0] |
+| ST-01( AEQ ) -> SN-09( VKE ) |  DMG: 30.0 | ST-01 [HP: 36.0, Damage: 25.0]; SN-09 [HP: 35.0, Damage: 30.0] |
+
+| Attackers VKE |
+| 0) MD-07 [HP: 60.0, Damage: 10.0] |
+| 1) SN-09 [HP: 35.0, Damage: 30.0] |
+| Defenders AEQ |
+| 0) ST-01 [HP: 36.0, Damage: 25.0] |
+| 1) TK-88 [HP: 132.0, Damage: 20.0] |
+
+| ROUND 4 |
+| MD-07( VKE ) -> SN-09( VKE ) |  SKILL [HEAL: 25]  | MD-07 [HP: 60.0, Damage: 10.0]; SN-09 [HP: 60.0, Damage: 30.0] |
+| ST-01( AEQ ) -> MD-07( VKE ) |  SKILL [DMG: 25.0] | ST-01 [HP: 36.0, Damage: 25.0]; MD-07 [HP: 35.0, Damage: 10.0] |
+
+| Attackers VKE |
+| 0) MD-07 [HP: 35.0, Damage: 10.0] |
+| 1) SN-09 [HP: 60.0, Damage: 30.0] |
+| Defenders AEQ |
+| 0) ST-01 [HP: 36.0, Damage: 25.0] |
+| 1) TK-88 [HP: 132.0, Damage: 20.0] |
+
+| ROUND 5 |
+| SN-09( VKE ) -> ST-01( AEQ ) |  DMG: 39.0 | SN-09 [HP: 60.0, Damage: 30.0]; ST-01 [HP: 0.0, Damage: 25.0] |
+| TK-88( AEQ ) -> MD-07( VKE ) |  SKILL [DMG: 20.0] | TK-88 [HP: 132.0, Damage: 20.0]; MD-07 [HP: 15.0, Damage: 10.0] |
+
+| Attackers VKE |
+| 0) MD-07 [HP: 15.0, Damage: 10.0] |
+| 1) SN-09 [HP: 60.0, Damage: 30.0] |
+| Defenders AEQ |
+| 0) ST-01 [HP: 0.0, Damage: 25.0] |
+| 1) TK-88 [HP: 132.0, Damage: 20.0] |
+
+| ROUND 6 |
+| MD-07( VKE ) -> TK-88( AEQ ) |  DMG: 5.0 | MD-07 [HP: 15.0, Damage: 10.0]; TK-88 [HP: 127.0, Damage: 20.0] |
+| TK-88( AEQ ) -> MD-07( VKE ) |  DMG: 10.0 | TK-88 [HP: 127.0, Damage: 20.0]; MD-07 [HP: 5.0, Damage: 10.0] |
+
+| Attackers VKE |
+| 0) MD-07 [HP: 5.0, Damage: 10.0] |
+| 1) SN-09 [HP: 60.0, Damage: 30.0] |
+| Defenders AEQ |
+| 0) ST-01 [HP: 0.0, Damage: 25.0] |
+| 1) TK-88 [HP: 127.0, Damage: 20.0] |
+
+| ROUND 7 |
+| SN-09( VKE ) -> TK-88( AEQ ) |  SKILL [DMG: 30.0] | SN-09 [HP: 60.0, Damage: 30.0]; TK-88 [HP: 97.0, Damage: 20.0] |
+| TK-88( AEQ ) -> MD-07( VKE ) |  DMG: 20.0 | TK-88 [HP: 97.0, Damage: 20.0]; MD-07 [HP: 0.0, Damage: 10.0] |
+
+| Attackers VKE |
+| 0) MD-07 [HP: 0.0, Damage: 10.0] |
+| 1) SN-09 [HP: 60.0, Damage: 30.0] |
+| Defenders AEQ |
+| 0) ST-01 [HP: 0.0, Damage: 25.0] |
+| 1) TK-88 [HP: 97.0, Damage: 20.0] |
+
+| ROUND 8 |
+| SN-09( VKE ) -> TK-88( AEQ ) |  DMG: 18.0 | SN-09 [HP: 60.0, Damage: 30.0]; TK-88 [HP: 79.0, Damage: 20.0] |
+| TK-88( AEQ ) -> SN-09( VKE ) |  SKILL [DMG: 0.0] | TK-88 [HP: 79.0, Damage: 20.0]; SN-09 [HP: 60.0, Damage: 30.0] |
+
+| Attackers VKE |
+| 0) MD-07 [HP: 0.0, Damage: 10.0] |
+| 1) SN-09 [HP: 60.0, Damage: 30.0] |
+| Defenders AEQ |
+| 0) ST-01 [HP: 0.0, Damage: 25.0] |
+| 1) TK-88 [HP: 79.0, Damage: 20.0] |
+
+| ROUND 9 |
+| SN-09( VKE ) -> TK-88( AEQ ) |  SKILL [DMG: 15.0] | SN-09 [HP: 60.0, Damage: 30.0]; TK-88 [HP: 64.0, Damage: 20.0] |
+| TK-88( AEQ ) -> SN-09( VKE ) |  DMG: 10.0 | TK-88 [HP: 64.0, Damage: 20.0]; SN-09 [HP: 50.0, Damage: 30.0] |
+
+| Attackers VKE |
+| 0) MD-07 [HP: 0.0, Damage: 10.0] |
+| 1) SN-09 [HP: 50.0, Damage: 30.0] |
+| Defenders AEQ |
+| 0) ST-01 [HP: 0.0, Damage: 25.0] |
+| 1) TK-88 [HP: 64.0, Damage: 20.0] |
+
+| ROUND 10 |
+| SN-09( VKE ) -> TK-88( AEQ ) |  DMG: 30.0 | SN-09 [HP: 50.0, Damage: 30.0]; TK-88 [HP: 55.0, Damage: 20.0] |
+| TK-88( AEQ ) -> SN-09( VKE ) |  SKILL [DMG: 20.0] | TK-88 [HP: 55.0, Damage: 20.0]; SN-09 [HP: 30.0, Damage: 30.0] |
+
+| Attackers VKE |
+| 0) MD-07 [HP: 0.0, Damage: 10.0] |
+| 1) SN-09 [HP: 30.0, Damage: 30.0] |
+| Defenders AEQ |
+| 0) ST-01 [HP: 0.0, Damage: 25.0] |
+| 1) TK-88 [HP: 55.0, Damage: 20.0] |
+
+| ROUND 11 |
+| SN-09( VKE ) -> TK-88( AEQ ) |  SKILL [DMG: 15.0] | SN-09 [HP: 30.0, Damage: 30.0]; TK-88 [HP: 40.0, Damage: 20.0] |
+| TK-88( AEQ ) -> SN-09( VKE ) |  DMG: 0.0 | TK-88 [HP: 40.0, Damage: 20.0]; SN-09 [HP: 30.0, Damage: 30.0] |
+
+| Attackers VKE |
+| 0) MD-07 [HP: 0.0, Damage: 10.0] |
+| 1) SN-09 [HP: 30.0, Damage: 30.0] |
+| Defenders AEQ |
+| 0) ST-01 [HP: 0.0, Damage: 25.0] |
+| 1) TK-88 [HP: 40.0, Damage: 20.0] |
+
+| ROUND 12 |
+| SN-09( VKE ) -> TK-88( AEQ ) |  DMG: 18.0 | SN-09 [HP: 30.0, Damage: 30.0]; TK-88 [HP: 22.0, Damage: 20.0] |
+| TK-88( AEQ ) -> SN-09( VKE ) |  SKILL [DMG: 20.0] | TK-88 [HP: 22.0, Damage: 20.0]; SN-09 [HP: 10.0, Damage: 30.0] |
+
+| Attackers VKE |
+| 0) MD-07 [HP: 0.0, Damage: 10.0] |
+| 1) SN-09 [HP: 10.0, Damage: 30.0] |
+| Defenders AEQ |
+| 0) ST-01 [HP: 0.0, Damage: 25.0] |
+| 1) TK-88 [HP: 22.0, Damage: 20.0] |
+
+| ROUND 13 |
+| SN-09( VKE ) -> TK-88( AEQ ) |  SKILL [DMG: 30.0] | SN-09 [HP: 10.0, Damage: 30.0]; TK-88 [HP: 0.0, Damage: 20.0] |
+
+
+| TEAM BATTLE ENDED |
+WINNER: VKE!

@@ -1,26 +1,33 @@
 package battle;
 
 import droids.Droid;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * Клас Battle відповідає за проведення одного ходу бою між двома дроїдами.
+ * Абстрактний клас {@code Battle} визначає базову логіку проведення одного ходу бою
+ * між двома дроїдами. Він відповідає за взаємодію з користувачем під час вибору дії
+ * (атака або навичка), виконання вибраної дії та формування звіту про результати.
  *
- * Він зчитує вибір користувача (атака або навичка), виконує відповідну дію
- * та формує текстовий звіт про результати цього ходу.
+ * Класи {@link Duel} та {@link TeamBattle} наслідують цей клас і реалізують
+ * конкретну поведінку для своїх режимів бою.
  */
-public class Battle {
+public abstract class Battle {
+
     /** Об'єкт для зчитування введення користувача з консолі. */
     private static final Scanner scanner = new Scanner(System.in);
 
     /**
-     * Проводить хід для певного дроїда (виконавця) проти цілі.
-     * Запитує у користувача вибір дії, виконує її та формує звіт про хід.
+     * Проводить один хід для дроїда-виконавця проти вказаної цілі.
      *
-     * @param performer дроїд, який виконує дію (атака або навичка)
+     * Запитує у користувача вибір дії (1 — атака, 2 — навичка),
+     * перевіряє можливість використання навички, виконує дію
+     * та формує текстовий звіт про хід.
+     *
+     * @param performer дроїд, який виконує дію (атаку або навичку)
      * @param target дроїд, який є ціллю дії
-     * @return текстовий лог з описом ходу, результатів і поточного стану дроїдів
+     * @return текстовий звіт із описом дії, результатів і поточного стану дроїдів
      */
     protected String collectTurnLog(Droid performer, Droid target) {
         boolean skillAllowed = performer.isCanUseSkill();
@@ -58,41 +65,24 @@ public class Battle {
     }
 
     /**
-     * Виконує вибрану дію дроїда (атака або навичка) та повертає короткий опис результату.
+     * Виконує дію (атаку або навичку) та повертає короткий опис результату.
+     * Реалізується у підкласах {@link Duel} і {@link TeamBattle}.
      *
      * @param performer дроїд, який виконує дію
-     * @param target дроїд, проти якого діє виконавець
+     * @param target дроїд, на якого спрямована дія
      * @param choice вибір дії (1 — атака, 2 — навичка)
-     * @return короткий опис дії, наприклад "DMG: 25" або "SKILL"
+     * @return короткий опис результату дії (наприклад, "DMG: 20" або "SKILL [HEAL: 25]")
      */
-    private String executeActionAndGetDescription(Droid performer, Droid target, int choice) {
-        switch (choice) {
-            case 1:
-                performer.attack(target);
-                performer.setCanUseSkill(true);
-                return " DMG: " + performer.getDamage();
-            case 2:
-                performer.skill();
-                performer.setCanUseSkill(false);
-                return " SKILL  ";
-            default:
-                return " Invalid choice. Skipping turn!";
-        }
-    }
+    protected abstract String executeActionAndGetDescription(Droid performer, Droid target, int choice);
 
     /**
-     * Формує повний текстовий запис про дію дроїда у форматі:
-     * | Виконавець -> Ціль | Дія | Поточний стан дроїдів |
+     * Формує текстовий звіт про дію дроїда у зручному форматі.
+     * Реалізується у підкласах {@link Duel} і {@link TeamBattle}.
      *
-     * @param performer дроїд, який виконував дію
+     * @param performer дроїд, який виконує дію
      * @param target ціль дії
-     * @param actionDescription короткий опис результату дії
-     * @return рядок із детальним описом ходу
+     * @param actionDescription короткий опис дії
+     * @return відформатований текстовий звіт про хід
      */
-    protected String buildActionLog(Droid performer, Droid target, String actionDescription) {
-        String actionHeader = "| " + performer.getName() + " -> " + target.getName() + " | ";
-        String actionPart = actionDescription + " | ";
-        String statePart = performer + "; " + target + " |";
-        return actionHeader + actionPart + statePart;
-    }
+    protected abstract String buildActionLog(Droid performer, Droid target, String actionDescription);
 }

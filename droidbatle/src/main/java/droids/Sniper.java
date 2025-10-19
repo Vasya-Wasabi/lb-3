@@ -2,10 +2,8 @@ package droids;
 
 /**
  * Клас Sniper представляє дроїда-снайпера, який спеціалізується на потужних і точних атаках.
- *
  * Снайпер має шанс завдати критичної шкоди, а також здатен активувати навичку,
  * що дозволяє уникнути шкоди, але зменшує силу його атаки.
- *
  * Основні характеристики:
  *  - Здоров’я: 65
  *  - Базова шкода: 30
@@ -40,7 +38,7 @@ public class Sniper extends Droid {
      */
     @Override
     public void attack(Droid target) {
-        int actualDamage = (int)(damage * attackMultiplier);
+        double actualDamage = damage * attackMultiplier;
 
         double chance = Math.random();
 
@@ -61,8 +59,9 @@ public class Sniper extends Droid {
      * @param incomingDamage кількість отриманої шкоди
      */
     @Override
-    public void takeDamage(int incomingDamage) {
-        int finalIncomingDamage = (int)(incomingDamage * damageReceivedMultiplier);
+    public void takeDamage(double incomingDamage) {
+        double finalIncomingDamage = incomingDamage * damageReceivedMultiplier;
+        setIncomingDamage(finalIncomingDamage);
         health -= finalIncomingDamage;
         if (health < 0) health = 0;
 

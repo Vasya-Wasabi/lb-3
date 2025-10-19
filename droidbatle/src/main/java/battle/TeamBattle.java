@@ -1,18 +1,13 @@
 package battle;
 import droids.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+
+import java.util.*;
 
 /**
  * Клас {@code TeamBattle} реалізує логіку командного бою між двома групами дроїдів.
- *
- * Під час бою кожна команда по черзі обирає дроїдів для атаки.
- * Бій триває доти, поки всі дроїди однієї з команд не будуть знищені.
- *
- * Вся інформація про бій записується у файл через {@link FileManager}.
- * Клас наслідує базову функціональність від {@link Battle}.
+ * Під час бою команди по черзі виконують дії: обирають дроїдів для атаки або
+ * використання навички. Бій триває доти, поки всі дроїди однієї з команд не будуть знищені.
+ * Після завершення бою результат записується у файл через {@link FileManager}.
  */
 public class TeamBattle extends Battle {
 
@@ -54,12 +49,11 @@ public class TeamBattle extends Battle {
     }
 
     /**
-     * Основний метод запуску командного бою.
-     *
-     * Визначає, яка команда атакує першою, і проводить раунди,
-     * доки хоча б один дроїд із протилежної команди живий.
-     *
-     * Після завершення бою записує результат (переможця) у лог.
+     * Запускає командний бій між двома командами.
+     * Визначає випадковим чином, яка команда починає атаку,
+     * після чого команди по черзі виконують дії, доки
+     * не залишиться жодного живого дроїда в одній із них.
+     * Після завершення бою записує переможця у лог.
      */
     public void run() {
 
@@ -111,7 +105,7 @@ public class TeamBattle extends Battle {
     }
 
     /**
-     * Виводить склад команди у консоль і записує у лог.
+     * Виводить склад команди у консоль та записує його у файл логу.
      *
      * @param team список дроїдів команди
      */
@@ -123,13 +117,13 @@ public class TeamBattle extends Battle {
     }
 
     /**
-     * Виконує хід однієї команди — вибір атакуючого та цілі.
+     * Виконує хід однієї команди: вибір атакуючого дроїда та його цілі.
      *
      * @param team1Name назва команди, що атакує
      * @param team1 список дроїдів команди, що атакує
      * @param team2Name назва команди-захисника
      * @param team2 список дроїдів команди-захисника
-     * @return текстовий лог дії або {@code null}, якщо хід неможливий
+     * @return текстовий опис дії або {@code null}, якщо хід неможливий
      */
     private String performTurn(String team1Name, ArrayList<Droid> team1,
                                String team2Name, ArrayList<Droid> team2) {
@@ -146,40 +140,97 @@ public class TeamBattle extends Battle {
         return collectTurnLog(attacker, defender);
     }
 
+    /** Список для збереження поточної команди, до якої належить медик. */
+    private List<Droid> medicsTeam = new ArrayList<>();
+
     /**
-     * Формує текстовий звіт про дію дроїда.
+     * Виконує дію дроїда (атака або навичка) та повертає короткий опис результату.
+     *
+     * @param performer дроїд, який виконує дію
+     * @param target дроїд, на якого спрямована дія
+     * @param choice вибір дії (1 — атака, 2 — навичка)
+     * @return текстовий опис результату дії
+     */
+    protected String executeActionAndGetDescription(Droid performer, Droid target, int choice) {
+        switch (choice) {
+            case 1:
+                performer.attack(target);
+                performer.setCanUseSkill(true);
+                return " DMG: " + target.getIncomingDamage();
+            case 2:
+                if ((performer instanceof Medic)) {
+                    String teamName = droidTeams.get(performer);
+
+                    if (teamName.equals(teamName1)) {
+                        medicsTeam = team1;
+                    } else {
+                        medicsTeam = team2;
+                    }
+
+                    ((Medic) performer).skill(medicsTeam, true);
+                    performer.setCanUseSkill(false);
+                    return " SKILL [HEAL: 25] ";
+                } else {
+                    performer.attack(target);
+                    performer.skill();
+                    performer.setCanUseSkill(false);
+                    return " SKILL [DMG: "  + target.getIncomingDamage() + "]";
+                }
+            default:
+                return " Invalid choice. Skipping turn!";
+        }
+    }
+
+    /**
+     * Формує текстовий звіт про дію дроїда під час бою.
      *
      * @param performer дроїд, який виконує дію
      * @param target дроїд, який зазнає дії
-     * @param actionDescription опис дії (наприклад, "attacks", "heals" тощо)
-     * @return відформатований рядок із повним описом дії
+     * @param actionDescription короткий опис дії (наприклад, "attacks", "heals")
+     * @return відформатований рядок з повним описом дії
      */
-    @Override
     protected String buildActionLog(Droid performer, Droid target, String actionDescription) {
-        String actionHeader = "| " + performer.getName() + "( " + getTeamName(performer) + " ) -> "
-                + target.getName() + "( " + getTeamName(target) + " ) | ";
+        String actionHeader;
+        String statePart;
+
+        Droid ally = null;
+        for (Droid d : medicsTeam) {
+            if (d != performer && d.isAlive()) {
+                ally = d;
+                break;
+            }
+        }
+
+        if (performer instanceof Medic && !performer.isCanUseSkill() && ally != null && ally.isAlive()) {
+            actionHeader = "| " + performer.getName() + "( " + getTeamName(performer) + " ) -> "
+                    + ally.getName() + "( " + getTeamName(ally) + " ) | ";
+            statePart = performer + "; " + ally + " |";
+        } else {
+            actionHeader = "| " + performer.getName() + "( " + getTeamName(performer) + " ) -> "
+                    + target.getName() + "( " + getTeamName(target) + " ) | ";
+            statePart = performer + "; " + target + " |";
+        }
 
         String actionPart = actionDescription + " | ";
-        String statePart = performer + "; " + target + " |";
 
         return actionHeader + actionPart + statePart;
     }
 
     /**
-     * Повертає назву команди, до якої належить заданий дроїд.
+     * Повертає назву команди, до якої належить конкретний дроїд.
      *
-     * @param d об’єкт дроїда
-     * @return назва команди або "Unknown", якщо дроїд не знайдений у мапі
+     * @param d дроїд
+     * @return назву команди або "Unknown", якщо дроїда не знайдено
      */
     private String getTeamName(Droid d) {
         return droidTeams.getOrDefault(d, "Unknown");
     }
 
     /**
-     * Перевіряє, чи жива хоча б одна одиниця в команді.
+     * Перевіряє, чи є живі дроїди в команді.
      *
      * @param team список дроїдів
-     * @return {@code true}, якщо в команді є живі дроїди
+     * @return true, якщо в команді є хоча б один живий дроїд
      */
     private boolean isTeamAlive(ArrayList<Droid> team) {
         for (Droid d : team) {
@@ -189,11 +240,11 @@ public class TeamBattle extends Battle {
     }
 
     /**
-     * Дозволяє користувачу вибрати дроїда з команди.
-     * Перевіряє, чи дроїд живий і чи індекс правильний.
+     * Дозволяє користувачу обрати дроїда для дії.
+     * Перевіряє правильність індексу та чи дроїд живий.
      *
-     * @param team список дроїдів для вибору
-     * @return обраний дроїд або {@code null}, якщо вибір неможливий
+     * @param team список дроїдів, серед яких здійснюється вибір
+     * @return вибраний дроїд або null, якщо вибір неможливий
      */
     private Droid chooseDroid(ArrayList<Droid> team) {
         Droid chosen = null;

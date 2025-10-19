@@ -1,0 +1,24 @@
+
+DUEL START: ST-01 VS SN-09
+
+Stormtrooper ST-01 [HP: 105.0, Damage: 25.0]
+Sniper SN-09 [HP: 65.0, Damage: 30.0]
+
+
+| ROUND 1 |
+| ST-01 -> SN-09 |  DMG: 25.0 | ST-01 [HP: 105.0, Damage: 25.0]; SN-09 [HP: 40.0, Damage: 30.0] |
+| SN-09 -> ST-01 |  DMG: 30.0 | SN-09 [HP: 40.0, Damage: 30.0]; ST-01 [HP: 75.0, Damage: 25.0] |
+
+
+| ROUND 2 |
+| ST-01 -> SN-09 |  SKILL [DMG: 30.0] | ST-01 [HP: 75.0, Damage: 25.0]; SN-09 [HP: 10.0, Damage: 30.0] |
+| SN-09 -> ST-01 |  SKILL [DMG: 23.400000000000002] | SN-09 [HP: 10.0, Damage: 30.0]; ST-01 [HP: 51.599999999999994, Damage: 25.0] |
+
+
+| ROUND 3 |
+| ST-01 -> SN-09 |  Invalid choice. Skipping turn! | ST-01 [HP: 51.599999999999994, Damage: 25.0]; SN-09 [HP: 10.0, Damage: 30.0] |
+| SN-09 -> ST-01 |  DMG: 30.0 | SN-09 [HP: 10.0, Damage: 30.0]; ST-01 [HP: 21.599999999999994, Damage: 25.0] |
+
+
+| DUEL ENDED |
+WINNER: SN-09!

@@ -3,10 +3,10 @@ package battle;
 import java.io.*;
 
 /**
- * Клас FileManager відповідає за створення, запис, зчитування та закриття файлів журналу бою.
- *
- * Усі дії під час битви (ходи, результати, повідомлення) записуються у файл формату .txt
- * у папці "BattleRecords". Також усі записи дублюються у консоль.
+ * Клас {@code FileManager} відповідає за роботу з файлами журналів бою.
+ * Він забезпечує створення, запис, зчитування та закриття текстових файлів
+ * у папці "BattleRecords". Усі дії, що відбуваються під час бою
+ * (ходи, результати, повідомлення), записуються у файл і дублюються в консоль.
  */
 public class FileManager {
 
@@ -18,14 +18,14 @@ public class FileManager {
 
     /**
      * Створює новий файл для запису журналу бою.
-     * Якщо файл з таким іменем вже існує — він перезаписується.
+     * Якщо файл із таким іменем уже існує, він буде перезаписаний.
      *
      * @param filename ім’я файлу без розширення (наприклад, "duel1" або "team_battle")
      */
     public static void setFile(String filename) {
         try {
             currentFile = "BattleRecords\\" + filename + ".txt";
-            writer = new FileWriter(currentFile, false); // створення нового файлу
+            writer = new FileWriter(currentFile, false);
             System.out.println("Battle log file set: " + currentFile);
         } catch (IOException e) {
             System.out.println("Error creating file: " + e.getMessage());
@@ -35,17 +35,15 @@ public class FileManager {
     }
 
     /**
-     * Записує один рядок тексту у файл журналу бою та дублює його у консоль.
-     * Якщо файл ще не створено (writer == null), то запис у файл пропускається.
+     * Записує рядок тексту у файл журналу бою та дублює його у консоль.
+     * Якщо файл ще не створено ({@code writer == null}), запис у файл пропускається.
      *
      * @param log текстовий рядок, який потрібно додати до журналу бою
      */
     public static void saveBattle(String log) {
-        // Завжди виводимо лог у консоль
-        System.out.println(log);
+        System.out.println(log); // дублювання у консоль
 
-        // Якщо файл не встановлено — пропускаємо запис
-        if (writer == null) return;
+        if (writer == null) return; // файл не створено
 
         try {
             writer.write(log + System.lineSeparator());
@@ -56,9 +54,8 @@ public class FileManager {
 
     /**
      * Закриває поточний файл журналу бою після завершення бою.
-     *
-     * Цей метод звільняє ресурси FileWriter, що запобігає втраті даних.
-     * Викликається після закінчення дуелі або командної битви.
+     * Метод звільняє ресурси {@link FileWriter}, запобігаючи втраті даних.
+     * Викликається після завершення дуелі або командної битви.
      */
     public static void closeFile() {
         if (writer != null) {
@@ -76,8 +73,9 @@ public class FileManager {
 
     /**
      * Зчитує вміст файлу журналу бою та виводить його у консоль.
+     * Якщо файл не знайдено — виводить відповідне повідомлення.
      *
-     * @param filename ім’я файлу (разом із розширенням .txt або без нього),
+     * @param filename ім’я файлу (з розширенням .txt або без нього),
      *                 який знаходиться у папці "BattleRecords"
      */
     public static void readBattle(String filename) {
